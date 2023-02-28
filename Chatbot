@@ -1,0 +1,32 @@
+import random
+
+name = input("What is your name? ")
+size = input("What size do you wear? ")
+pants = input("So," + " " + name + ", What pants do you like? ")
+response = random.choice(["Those are always in style,","Good choice!","Neat.","Can't go wrong with those! "])
+print(response)
+
+tops = input("What tops do you usually wear? ")
+if tops == "A variety":
+    print("Great! Keep your options open. ")
+elif tops == "T-Shirts":
+    print("Cool, great for the hot weather.")
+else:
+    print(response)
+    
+hats = input("What hats do you like? ")
+if hats == "baseball caps":
+    print("Nice, keep it casual.")
+elif hats == "top hats":
+    print("Nice, keep it classy.")
+else:
+    print("Cool.")
+    
+accessories = input("Ok," + " " + name + ", Are there any accessories you like? ")
+response2 = random.randint(1,3)
+if response2 == 1:
+    print("Sick")
+elif response2 == 3:
+    print("Rad")
+else:
+    print("Nice")
